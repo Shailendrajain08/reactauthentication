@@ -1,0 +1,23 @@
+.errmsg{
+    color: red;
+  }
+  
+  .form-check-input{
+    height: 20px;
+    width: 20px;
+  }
+
+.check-label{
+    margin-right: 15px;
+}
+
+.card-footer button {
+    margin-right: 10px;
+} 
+
+.header{
+    width: 100%;
+    background-color: blue;
+    color: white;
+    padding: 1%;
+}

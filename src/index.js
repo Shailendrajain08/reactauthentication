@@ -6,10 +6,28 @@ import reportWebVitals from './reportWebVitals';
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css'
 import '../node_modules/react-toastify/dist/ReactToastify.css'
 
+import { ToastContainer } from 'react-toastify';
+import { RouterProvider, createBrowserRouter, Route, createRoutesFromElements } from "react-router-dom";
+import Layout from './components/Layout';
+import Home from './components/Home';
+import Login from './components/Login';
+import SignUp from './components/SignUp';
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
+<ToastContainer theme='colored'></ToastContainer>
+const router = createBrowserRouter(
+  createRoutesFromElements(
+    <Route path="/" element={<Layout/>}>
+      <Route path="/" element={<Home/>}></Route>
+      <Route path="/login" element={<Login/>}></Route>
+      <Route path="/signup" element={<SignUp/>}></Route>
+    </Route>
+  )
+)
+
 root.render(
   <React.StrictMode>
-    <App />
+    <RouterProvider router={router} />
   </React.StrictMode>
 );
 

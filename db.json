@@ -1,0 +1,14 @@
+{
+  "user": [
+    {
+      "id": "SJain08",
+      "name": "Shailendra Jain",
+      "password": "SJain0894@",
+      "email": "shailendra@gmail.com",
+      "phone": "7415505416",
+      "country": "india",
+      "address": "C-13, Vaishali Nagar, Damoh (M.P.)",
+      "gender": "male"
+    }
+  ]
+}
